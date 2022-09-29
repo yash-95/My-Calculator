@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="calculator">
+  <div class="grid_wrapper">
+    <div class="output">
+      <input type="text" id="calField" disabled>
+    </div>
+   <!--  Operators -->
+          <input type="button" class="oprtrs btn plus" onclick="dis('+')" value="+" id="plus">
+          <input type="button" class="oprtrs btn" onclick="dis('-')" value="-">
+          <input type="button" class="oprtrs btn" onclick="dis('*')" value=&times; id="multiply">
+          <input type="button" class="oprtrs btn" onclick="dis('/')" value=&divide;>
+    <!-- First row -->
+          <input type="button" class="frst_rw btn" onclick="dis('7')" value="7">
+          <input type="button" class="frst_rw btn" onclick="dis('8')" value="8">
+          <input type="button" class="frst_rw btn" onclick="dis('9')" value="9">
+    <!-- Second row -->
+          <input type="button" class="scnd_rw btn" onclick="dis('4')" value="4">
+          <input type="button" class="scnd_rw btn" onclick="dis('5')" value="5">
+          <input type="button" class="scnd_rw btn" onclick="dis('6')" value="6">
+    <!-- Third row -->
+          <input type="button" class="thrd_rw btn" onclick="dis('1')" value="1">
+          <input type="button" class="thrd_rw btn" onclick="dis('2')" value="2">
+          <input type="button" class="thrd_rw btn" onclick="dis('3')" value="3">
+    <!-- Fourth row -->
+          <input type="button" class="frth_rw btn" onclick="dis('0')" value="0">
+          <input type="button" class="frth_rw btn" onclick="dis('.')" value=".">
+          <input type="button" class="clr_btn frth_rw btn" onclick="clr()" value="C">
+          <input type="button" class="solve_btn" onclick="solve()" value="=">
+  </div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
